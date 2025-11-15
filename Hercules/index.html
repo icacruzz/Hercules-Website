@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hercules - Empowering Youth in the Era of Disruption</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <canvas id="binary-rain-canvas"></canvas> 
+
+    <header id="header">
+        <div class="logo">HERCULES</div>
+        <nav>
+            <a href="#hero">Start Node</a>
+            <a href="#dq-quiz">DQ Test</a>
+            <a href="#resources">Data Library</a>
+            <a href="#simulator">Code Sim</a>
+        </nav>
+        <button class="nav-button">ONLINE STATUS</button>
+    </header>
+
+    <section id="hero" class="full-screen-section">
+        <div class="hero-content">
+            <h1>GENERASI MUDA<br>MEMIMPIN DISRUPSI.</h1>
+            <p class="tagline">REWRITE YOUR CODE. LEAD THE DISRUPTION.</p>
+            <button onclick="document.getElementById('dq-quiz').scrollIntoView({behavior: 'smooth'});" class="cta-primary">START YOUR DQ TEST &rarr;</button>
+        </div>
+    </section>
+
+    <section id="dq-quiz" class="feature-section">
+        <h2>DISRUPTION QUOTIENT (DQ) TEST</h2>
+        <p>Ukur kemampuan adaptasi dan pola pikir inovatif Anda dalam 3 pertanyaan kunci.</p>
+        
+        <div id="quiz-area" class="card-feature">
+            <div id="quiz-question-display"></div>
+            <div id="quiz-options-container"></div>
+            <div id="quiz-feedback" style="margin-top: 15px;"></div>
+            <button id="quiz-reset" style="display: none;" class="nav-button">RESTART TEST</button>
+        </div>
+    </section>
+
+    <section id="resources" class="feature-section">
+        <h2> DATA LIBRARY </h2>
+        <div class="filter-controls">
+            <button class="filter-btn active" data-filter="all">ALL</button>
+            <button class="filter-btn" data-filter="tech">TECH</button>
+            <button class="filter-btn" data-filter="soft">SOFT SKILL</button>
+            <button class="filter-btn" data-filter="future">FUTURE TRENDS</button>
+        </div>
+        <div id="resource-list" class="resource-grid">
+            
+            <div class="resource-item tech" data-category="tech">
+                <h4>Python for AI Foundational</h4>
+                <p>Panduan cepat untuk memulai pembelajaran mesin dasar.</p>
+            </div>
+            <div class="resource-item soft" data-category="soft">
+                <h4>Mastering Agile & Scrums</h4>
+                <p>Teknik kolaborasi tim yang cepat dan adaptif.</p>
+            </div>
+            <div class="resource-item future" data-category="future">
+                <h4>The Impact of Web3.0 on Finance</h4>
+                <p>Analisis peluang dan ancaman desentralisasi.</p>
+            </div>
+            <div class="resource-item tech" data-category="tech">
+                <h4>JavaScript: Async & Promises</h4>
+                <p>Meningkatkan kinerja aplikasi web Anda.</p>
+            </div>
+            <div class="resource-item soft" data-category="soft">
+                <h4>Critical Thinking in Data Era</h4>
+                <p>Cara membedakan fakta dan bias data besar.</p>
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="simulator" class="feature-section">
+        <h2>CODE SIMULATOR (TYPING SPEED)</h2>
+        <p>Latih kecepatan dan akurasi mengetik Anda, fundamental untuk setiap Developer di era disrupsi.</p>
+        
+        <div id="typing-container" class="card-feature">
+            <div id="typing-text">// console.log("Hello World in Disruption");</div>
+            <input type="text" id="typing-input" placeholder="Mulai mengetik di sini..." autofocus>
+            <div id="typing-stats">WPM: 0 | Akurasi: 0%</div>
+            <button id="typing-reset" class="nav-button">RESET</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>Hercules  &copy; 2025</p>
+        <p>Hacker Mode Activated</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
