@@ -101,11 +101,11 @@ document.addEventListener('DOMContentLoaded', () => {
         let feedbackText;
         
         if (totalDQScore >= 7) {
-            feedbackText = `SKOR DQ ANDA: ${totalDQScore}/${maxScore}. **CLASSIFICATION: DISRUPTOR.** Pola pikir Anda siap memimpin perubahan. Tetaplah bereksperimen!`;
+            feedbackText = `SKOR DQ ANDA: ${totalDQScore}/${maxScore}. CLASSIFICATION: DISRUPTOR. Pola pikir Anda siap memimpin perubahan. Tetaplah bereksperimen!`;
         } else if (totalDQScore >= 4) {
-            feedbackText = `SKOR DQ ANDA: ${totalDQScore}/${maxScore}. **CLASSIFICATION: ADAPTOR.** Anda cepat menyesuaikan, namun perlu keberanian lebih untuk berinovasi dari nol.`;
+            feedbackText = `SKOR DQ ANDA: ${totalDQScore}/${maxScore}. CLASSIFICATION: ADAPTOR. Anda cepat menyesuaikan, namun perlu keberanian lebih untuk berinovasi dari nol.`;
         } else {
-            feedbackText = `SKOR DQ ANDA: ${totalDQScore}/${maxScore}. **CLASSIFICATION: OBSERVER.** Fokus pada pengembangan literasi digital dan keterbukaan terhadap hal baru.`;
+            feedbackText = `SKOR DQ ANDA: ${totalDQScore}/${maxScore}. CLASSIFICATION: OBSERVER. Fokus pada pengembangan literasi digital dan keterbukaan terhadap hal baru.`;
         }
 
         qFeedback.innerHTML = `<p style="color: var(--color-primary-neon); font-weight: bold;">${feedbackText}</p>`;
@@ -244,4 +244,5 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     });
+
 });
